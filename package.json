@@ -1,0 +1,11 @@
+{
+  "name": "itops-tv-module",
+  "version": "1.0.0",
+  "description": "TizenBrew module that opens the ITOps wall board full screen.",
+  "appName": "ITOps Board",
+  "packageType": "mods",
+  "websiteURL": "http://192.168.99.200:8080/",
+  "main": "board.js",
+  "keys": [],
+  "license": "UNLICENSED"
+}
