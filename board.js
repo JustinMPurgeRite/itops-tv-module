@@ -1,7 +1,7 @@
 // Injected by TizenBrew into the ITOps board page on the TV.
 // Keeps the wall display healthy without anyone touching the remote.
 (function () {
-  var BOARD_URL = 'http://192.168.99.200:8080/';
+  var BOARD_URL = 'http://192.168.99.201:8080/';
   var HEALTH_URL = BOARD_URL + 'healthz';
   var FULL_RELOAD_MS = 6 * 60 * 60 * 1000; // fresh page every 6 hours (clears memory leaks)
   var HEALTH_CHECK_MS = 60 * 1000;

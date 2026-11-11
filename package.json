@@ -4,7 +4,7 @@
   "description": "TizenBrew module that opens the ITOps wall board full screen.",
   "appName": "ITOps Board",
   "packageType": "mods",
-  "websiteURL": "http://192.168.99.200:8080/",
+  "websiteURL": "http://192.168.99.201:8080/",
   "main": "board.js",
   "keys": [],
   "license": "UNLICENSED"

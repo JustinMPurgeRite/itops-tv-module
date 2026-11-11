@@ -1,6 +1,6 @@
 # ITOps Board — TizenBrew module
 
-Opens the ITOps wall board (`http://192.168.99.200:8080/`) on the Samsung TV through TizenBrew.
+Opens the ITOps wall board (`http://192.168.99.201:8080/`) on the Samsung TV through TizenBrew.
 
 - `package.json`: TizenBrew `mods` module. `websiteURL` is the page the TV opens.
 - `board.js`: injected into the page. It hides the cursor, retries the background video, reloads after the board server comes back, and does a fresh reload every 6 hours.
@@ -16,3 +16,7 @@ Opens the ITOps wall board (`http://192.168.99.200:8080/`) on the Samsung TV thr
 
 jsDelivr caches GitHub files for up to 12 hours. After pushing a change, either wait or purge the cache by opening
 `https://purge.jsdelivr.net/gh/your-user/your-repo/package.json` and `.../board.js`.
+
+## Which board it opens
+
+`http://192.168.99.201:8080/` is the Next.js ops-dashboards app (Proxmox CT 201, repo JustinMPurgeRite/itops_dash). The old plain-Node board still runs at `http://192.168.99.200:8080/` (CT 200). To roll back, set `websiteURL` in `package.json` and `BOARD_URL` in `board.js` back to that address, push, and purge the jsDelivr cache as above.
